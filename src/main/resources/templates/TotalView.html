@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="layout">
+
+
+	
+	<head>
+		<title>List of Countries</title>
+		
+			
+		
+		<link rel="stylesheet" 
+			href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" 
+			integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" 
+			crossorigin="anonymous" />
+	</head>
+	
+	<body>
+	
+	
+	<div layout:fragment="content">
+    <section class="my-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="container">
+		
+			<h3>Covid - 19 - Total Value</h3>
+			
+			<hr/>
+		
+			<table class="table table-bordered table-striped">
+			
+				<thead>
+					<tr>
+						<th>Location</th>
+						<th>Confirmed</th>
+						<th>Recovered</th>
+						<th>Deaths</th>
+						<th>Last Checked</th>
+						<th>Last Reported</th>
+						
+					</tr>
+				</thead>
+				<tbody>
+					<tr >
+						<td th:text="${covidtotal.location}" />	
+						<td th:text="${covidtotal.confirmed}" />
+						<td th:text="${covidtotal.recovered}" />					
+						<td th:text="${covidtotal.deaths}" />
+						<td th:text="${covidtotal.lastChecked}" />
+						<td th:text="${covidtotal.lastReported}" />
+						
+						
+					</tr>
+				</tbody>
+				
+			</table>
+		</div>
+	
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+		
+		
+		
+	</body>
+	
+</html>
