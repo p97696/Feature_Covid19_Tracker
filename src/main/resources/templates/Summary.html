@@ -59,6 +59,14 @@
 			<h3>Covid - 19 Status</h3>
 			
 			<hr/>
+			
+			<div align="right" style="align: right;border: 2px black-outset">
+		<form th:action="@{/api/summary?page=1}" target="_self">
+				<input type="text" th:name="size"/> 
+				<input type="submit"/> 
+				</form>
+				</div>
+        
 		
 			<table class="table table-bordered table-striped">
 			
